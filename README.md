@@ -11,7 +11,7 @@ Mettez vous dans un répértoire de votre choix, puis, tappez la commande suivan
 
 ``git clone git@github.com:AllanLegrand/SAE-2.03-Docker-MPM.git``
 
-Si vous regardez votre répértoire, vous verrez qu'un dossier **docker-sea203** s'est crée, déplacer vous dedans avec la commande
+Si vous regardez votre répértoire, vous verrez qu'un dossier **SAE-2.03-Docker-MPM** s'est crée, déplacer vous dedans avec la commande
 
 ``cd docker-sae203``
 
