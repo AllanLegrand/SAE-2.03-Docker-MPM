@@ -6,12 +6,12 @@
 
 ## Qu'est ce qu'une MPM 
 
-### PRÉSENTATION DE LA MPM	
+### Présentation de la MPM	
 
 La MPM ou Méthode des Potentiels et antécédents Métra est une technique d'ordonnancement basée sur la théorie des graphes, visant à optimiser la planification des tâches d'un projet.	
 
 
-### MÉTHODOLOGIE DE CONSTRUCTION D'UN RÉSEAU MPM	
+### Méthodologie de construction d'un réseau MPM	
 
 Le recours à la méthode des potentiels Métra suppose qu'aient été identifiées préalablement les différentes tâches nécessaires à la réalisation du projet, leur durée et leurs relations d'antériorité.
 
@@ -47,7 +47,7 @@ Le graphe se lit de gauche à droite (du sommet "DÉBUT" à celui de "FIN").
 	Chaque sommet symbolise une tâche.	
 	Les arcs entre les sommets traduisent uniquement les relations d'antériorité des tâches. D'un même sommet peuvent donc partir plusieurs flèches, lorsque la tâche correspondante est immédiatement antérieure à plusieurs tâches indépendantes.	
 
-###  DÉTERMINATION DES DATES "AU PLUS TÔT" ET "AU PLUS TARD" DANS UN RÉSEAU MPM	
+###  Détermination des dtaes "au plus tôt" et "au plus tard" dans un réseau MPM
 
 Chaque sommet est identifié par une cartouche où sont précisés : le "nom de la tâche", la "durée de cette tâche", les dates de "début au plus tôt" et de "début au plus tard" de cette tâche.	
 
@@ -63,14 +63,67 @@ La détermination des dates au plus tôt des différentes sommets se fait donc p
 La durée minimale du projet correspond donc à la date au plus tôt du sommet "Fin".	
 
 
-
 La date au plus tard d'un réseau MPM correspond à la date à laquelle une tâche doit être exécutée au plus tard pour ne pas remettre en cause la durée optimale totale du projet.	
-	Elle s'obtient en retirant de la date au plus tard de la tâche qui lui succède sa propre durée :	
-	Date au plus tard tâche S = Date au plus tard tâche T - durée tâche S	
+Elle s'obtient en retirant de la date au plus tard de la tâche qui lui succède sa propre durée :	
+- Date au plus tard tâche S = Date au plus tard tâche T - durée tâche S	
 
 Lorsque plusieurs arcs partent d'un même sommet (i.e. que plusieurs tâches succèdent à une tâche donnée), il convient de faire ce calcul pour toutes les tâches succédant à la tâche en question et de retenir comme "date au plus tard" de de cette dernière le minimum des valeurs ainsi trouvées :	
-Date au plus tard tâche S = Min. (date au plus tard tâches T - durée tâche S)	
-Dans cette formule, "T" représente l'ensemble des tâches immédiatement postérieures à "S"	
+- Date au plus tard tâche S = Min. (date au plus tard tâches T - durée tâche S)	
+- Dans cette formule, "T" représente l'ensemble des tâches immédiatement postérieures à "S"	
 
-La détermination des dates au plus tard des différentes tâches se fait donc à rebours du graphe, par calculs successifs, en partant du sommet "Fin" (pour lequel, par convention, on considère que la date au plus tard est égale à sa date au plus tôt).	
+La détermination des dates au plus tard des différentes tâches se fait donc à rebours du graphe, par calculs successifs, en partant du sommet "Fin" (pour lequel, par convention, on considère que la date au plus tard est égale à sa date au plus tôt).
+
+### Calcul des différentes marges d'une tâche dans un réseau MPM
+
+On appelle "marge" d'une tâche le retard qu'il est possible de tolérer dans la réalisation de celle-ci, sans que la durée optimale prévue du projet global en soit affectée.	
+Il est possible de calculer trois types de marges : la marge totale, la marge certaine et la marge libre.	
+
+
+
+La marge totale d'une tâche indique le retard maximal que l'on peut admettre dans sa réalisation (sous réserve qu'elle ait commencé à sa date au plus tôt) sans allonger la durée optimale du projet.	
+Elle se calcule très facilement en faisant la différence entre la date au plus tard et la date au plus tôt de la tâche en question.	
+Marge totale tâche S = Date plus tard tâche S - Date plus tôt tâche S	
+
+Ainsi, dans notre exemple précédent (projet Y) :	
+- Marge totale de A = (2 - 0) = 2	
+- Marge totale de C = (5 - 2) = 3	
+
+Sauf cas particulier, un retard correspondant à la marge totale d'une tâche se traduit par une modification des dates au plus tôt des tâches qui lui succèdent et entraîne, généralement, l'apparition d'un 2° chemin critique. Il n'est donc pas possible de cumuler des retards correspondant à leur marge totale sur plusieurs tâches successives, sans remettre en cause la durée optimale prévue pour le projet.	
+
+
+
+La marge libre d'une tâche indique le retard que l'on peut admettre dans sa réalisation (sous réserve qu'elle ait commencé à sa date au plus tôt) sans modifier les date au plus tôt des tâches suivantes et sans allonger la durée optimale du projet.	
+Elle se calcule en retirant la durée de la tâche en question à l'écart existant entre sa date au plus tôt de la date au plus tôt de la tâche suivante :	
+- Marge libre tâche S = Date plus tôt tâche T - Date plus tôt tâche S - Durée tâche S	
+
+Lorsque plusieurs arcs partent d'un même sommet (c'est-à-dire lorsque la réalisation de la tâche conditionne le début de plusieurs autres tâches indépendantes) il convient de faire ce calcul pour toutes les tâches succédant à la tâche en question et de retenir comme "marge libre" de la tâche en question la valeur minimale des marges ainsi déterminées :	
+- Marge totale tâche S = Min (Date plus tôt tâches T - Date plus tôt tâche S - Durée tâche S)	
+- Dans cette formule T représente l'ensemble des tâches succédant immédiatement à S	
+
+Ainsi, dans notre exemple précédent (projet Y) :	
+- Marge libre de A = Minimun [(2 - 0 - 2) , (4 - 0 - 2)] = Min [0, 2] = 0	
+- Marge libre de C = (9 - 2 - 4) = 3	
+Un retard correspondant à la marge libre d'une tâche reste sans conséquence sur les marges des tâches qui lui succèdent. Il est donc possible de cumuler des retards, s'inscrivant dans leur marge libre, pour plusieurs tâches successives, sans remettre en cause la durée optimale prévue pour le projet.	
+
+
+
+La marge certaine d'une tâche indique le retard que l'on peut admettre dans sa réalisation (quelle que soit sa date de début) sans allonger la durée optimale du projet.	
+Elle se calcule en retirant la durée de la tâche en question à l'écart qu'il peut y avoir entre sa date au plus tard de début et sa date au plus tôt de fin :	
+- Marge certaine tâche S = Max [ 0 , Min (Date au plus tôt tâche T - Date au plus tard tâche S - Durée tâche S) ]	
+D'après cette formule, la marge certaine est considérée comme nulle lorsque son calcul donne un nombre négatif	
+
+Lorsque plusieurs arcs partent d'un même sommet (c'est-à-dire lorsque la réalisation de la tâche conditionne le début de plusieurs autres tâches indépendantes) il convient de faire ce calcul pour toutes les tâches succédant à la tâche en question et de retenir comme "marge certaine" de cette dernière la valeur minimale des marges ainsi déterminées :	
+- Marge certaine tâche S = Max [0, Min (Date au plus tôt tâches T - Date au plus tard tâche S - Durée tâche S)	
+- Dans cette formule T représente l'ensemble des tâches succédant immédiatement à S	
+
+Ainsi, dans notre exemple précédent (projet Y) :	
+- Marge certaine de A = Max [0, Min ( [2 - 2 - 2], [4 - 2 - 2] ) ] = Max [0, Min (-2, 0)] = 0	
+- Marge certaine de C = Max [0, (9 - 5 - 4)] = 0	
+
+Un retard correspondant à la marge certaine d'une tâche reste sans conséquence sur les marges des tâches qui lui succèdent, même si elle a commencé à sa date au plus tard.	
+Il est donc possible de cumuler des retards, s'inscrivant dans leur marge certaine, pour plusieurs tâches successives, même si elles commencent à leur date au plus tard, sans remettre en cause la durée optimale prévue pour le projet.	
+
+On remarque que les marges des tâches composant le chemin critique sont nécessairement nulles, puisqu'il s'agit de tâches pour lesquels, par définition, aucun retard n'est possible sans remettre en cause la durée optimale prévue pour le projet.	
+
+
 
