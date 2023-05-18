@@ -1,6 +1,6 @@
 # Projet de création de schéma MPM	
 
-## Prerequis
+## Prérequis
 
 - GIT
 - Docker
