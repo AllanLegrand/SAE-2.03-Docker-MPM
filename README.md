@@ -37,4 +37,4 @@ Une fois le graphe MPM généré, vous pouvez arrêter l'image afin de libérer 
 
 ``docker stop <nom_image>``
 
-*Note : Bien évidement, <nom_image> et <port-hôte> sont à remplacer par le nom / port que vous voulez.*
+*Note : Bien évidement, <nom_image>, <nom_du_conteneur> et <port-hôte> sont à remplacer par le nom / port que vous voulez.*
