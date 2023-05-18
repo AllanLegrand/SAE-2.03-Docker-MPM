@@ -136,5 +136,5 @@ Le fichier ``index.html`` sera afficher lorsque vous vous rendez sur votre ip lo
 
 Maintenant que vous savez ce qu'est un MPM, vous pouvez facilement généré votre schéma. Il existe cependant des conditions pour ne pas que le programme plante. Pour la colonne `Duree`, vous ne pouvez entrer des entiers non signé. Pour la colonne `Antériorité`, il faudra séparer par des virgules chaque antécédant. Il sera aussi possible de ne rien mettre pour signifié une abscence d'antécédant. Attention a ne peut pas mettre un sommet qui n'existe, a mettre un sommet antécédant de lui même ou mettre des sommets antécédants entre eux.
 
-Vous pouvez ajouter des lignes et donc des sommets en appuyant sur le bouton correspondant, et quand vous avez finis votre tableau il suffit de cliquer sur le bouton Télécharger le schéma et attendre 5 secondes pour avoir votre schéma.
+Vous pouvez ajouter des lignes et donc des sommets en appuyant sur le bouton correspondant, et quand vous avez finis votre tableau il suffit de cliquer sur le bouton Télécharger le schéma et attendre 5 secondes pour avoir votre schéma. Veillez a remplir chacune des lignes créer.
 
