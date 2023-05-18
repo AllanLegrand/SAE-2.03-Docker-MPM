@@ -9,7 +9,7 @@
 Pour que notre application fonctionne, il est important de récupérer les fichiers nécessaire à son fonctionnement.
 Mettez vous dans un répértoire de votre choix, puis, tappez la commande suivante :
 
-``git clone git@github.com:Ottirate/docker-sae203.git``
+``git clone git@github.com:AllanLegrand/docker-sae203.git``
 
 Si vous regardez votre répértoire, vous verrez qu'un dossier **docker-sea203** s'est crée, déplacer vous dedans avec la commande
 
@@ -33,7 +33,7 @@ Une fois lancé, démarrer un navigateur de votre choix et tapper dans la barre 
 
 ``localhost:<port_hôte>``
 
-Et boom, une page apparait vous permettant d'avoir accès à la liste de vos étudiant, des groupes, et de leur passage.
+http://localhost/
 
 *Info : Il est possible de changer les datas afin de générer des groupes propres à vos demandes. N'hésitez pas à regarder notre site pour plus d'informations sur comment faire.*
 
