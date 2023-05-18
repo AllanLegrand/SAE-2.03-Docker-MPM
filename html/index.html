@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>MPM</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+  <h1>Tableau extensible</h1>
+  <table id="grille" class="table-auto">
+    <thead>
+      <tr>
+        <th>Taches</th>
+        <th>Duree</th>
+        <th>Antecedant</th>
+      </tr>
+    </thead>
+    <tr>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+      <td contenteditable="true"></td>
+    </tr>
+
+  </table>
+  </br>
+  <button class="btn" onclick="ajouterLigne()">Ajouter une ligne</button>
+  <button class="btn" onclick="telecharger()">Telecharger le schema</button>
+
+</body>
+
+</html>
