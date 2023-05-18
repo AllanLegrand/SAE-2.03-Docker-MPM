@@ -42,6 +42,7 @@ Sur la base des conventions précédentes, la construction d'un graphe MPM ne po
 - identifier ensuite les tâches de niveau 2, c'est-à-dire celles dont les antécédents sont exclusivement du niveau 1 et les positionner sur le graphique en les reliant à leurs antécédents,	
 - … continuer ainsi, jusqu'à ce que toutes les tâches aient pu être positionnées entre elles et relier celles n'ayant pas de descendant au sommet "Fin".	
 
+![MPM.png](./images/MPM.png "Schéma MPM")
 ### Lecture d'un graphe MPM	
 Le graphe se lit de gauche à droite (du sommet "DÉBUT" à celui de "FIN").	
 	Chaque sommet symbolise une tâche.	
