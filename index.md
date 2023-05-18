@@ -32,3 +32,9 @@ Sur la base des conventions précédentes, la construction d'un graphe MPM ne po
 - déterminer les tâches sans antécédent (tâches de niveau 1) et les relier au sommet "Début"	
 - identifier ensuite les tâches de niveau 2, c'est-à-dire celles dont les antécédents sont exclusivement du niveau 1 et les positionner sur le graphique en les reliant à leurs antécédents,	
 - … continuer ainsi, jusqu'à ce que toutes les tâches aient pu être positionnées entre elles et relier celles n'ayant pas de descendant au sommet "Fin".	
+
+Le graphe se lit de gauche à droite (du sommet "DÉBUT" à celui de "FIN").	
+	Chaque sommet symbolise une tâche.	
+	Les arcs entre les sommets traduisent uniquement les relations d'antériorité des tâches. D'un même sommet peuvent donc partir plusieurs flèches, lorsque la tâche correspondante est immédiatement antérieure à plusieurs tâches indépendantes.	
+
+Chaque sommet est identifié par une cartouche où sont précisés : le "nom de la tâche", la "durée de cette tâche", les dates de "début au plus tôt" et de "début au plus tard" de cette tâche.	
