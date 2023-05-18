@@ -47,8 +47,7 @@ Le graphe se lit de gauche à droite (du sommet "DÉBUT" à celui de "FIN").
 	Chaque sommet symbolise une tâche.	
 	Les arcs entre les sommets traduisent uniquement les relations d'antériorité des tâches. D'un même sommet peuvent donc partir plusieurs flèches, lorsque la tâche correspondante est immédiatement antérieure à plusieurs tâches indépendantes.	
 
-
-### DÉTERMINATION DES DATES "AU PLUS TÔT" ET "AU PLUS TARD" DANS UN RÉSEAU MPM	
+###  DÉTERMINATION DES DATES "AU PLUS TÔT" ET "AU PLUS TARD" DANS UN RÉSEAU MPM	
 
 Chaque sommet est identifié par une cartouche où sont précisés : le "nom de la tâche", la "durée de cette tâche", les dates de "début au plus tôt" et de "début au plus tard" de cette tâche.	
 
