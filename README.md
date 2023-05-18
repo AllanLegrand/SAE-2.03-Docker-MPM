@@ -27,8 +27,6 @@ Une fois terminer, tappez la commande suivante :
 
 ``docker run --name <nom_image> -d -p <port-hôte>:80 <nom_image>``
 
-*Note : Bien évidement, <nom_image> est à remplcaer par le nom que vous voulez*
-
 Une fois lancé, démarrer un navigateur de votre choix et tapper dans la barre la ligne suivante :
 
 ``localhost:<port_hôte>``
@@ -38,3 +36,5 @@ http://localhost/
 Une fois le graphe MPM généré, vous pouvez arrêter l'image afin de libérer votre port avec la commande :
 
 ``docker stop <nom_image>``
+
+*Note : Bien évidement, <nom_image> est à remplcaer par le nom que vous voulez*
