@@ -27,3 +27,8 @@ Les principales conventions d'un réseau MPM sont les suivantes :
 - les contraintes de succession sont symbolisées par les arcs	
 - chaque tâche est renseignée sur sa durée ainsi que sur la date à laquelle elle peut commencer au plus tôt ("date au plus tôt") et au plus tard ("date au plus tard") pour respecter le délai optimal de réalisation du projet.	
 - le graphe commence et termine sur 2 sommets, respectivement appelés "Début" et "Fin" symbolisant les début et fin des opérations (mais ne correspondant pas une tâche).	
+
+Sur la base des conventions précédentes, la construction d'un graphe MPM ne pose pas de difficulté particulière, mais doit être réalisée avec méthode. La démarche la plus appropriée consiste à procéder par "niveau" :	
+- déterminer les tâches sans antécédent (tâches de niveau 1) et les relier au sommet "Début"	
+- identifier ensuite les tâches de niveau 2, c'est-à-dire celles dont les antécédents sont exclusivement du niveau 1 et les positionner sur le graphique en les reliant à leurs antécédents,	
+- … continuer ainsi, jusqu'à ce que toutes les tâches aient pu être positionnées entre elles et relier celles n'ayant pas de descendant au sommet "Fin".	
