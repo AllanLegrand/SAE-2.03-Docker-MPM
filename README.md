@@ -8,6 +8,7 @@
 
 La MPM ou Méthode des Potentiels et antécédents Métra est une technique d'ordonnancement basée sur la théorie des graphes, visant à optimiser la planification des tâches d'un projet.	
 
+Le recours à la méthode des potentiels Métra suppose qu'aient été identifiées préalablement les différentes tâches nécessaires à la réalisation du projet, leur durée et leurs relations d'antériorité.
 
 | Tâches | Durée | Antériorité |
 |--------------|:-----:|-----------:|
