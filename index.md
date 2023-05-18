@@ -129,5 +129,9 @@ On remarque que les marges des tâches composant le chemin critique sont nécess
 
 Lors de la création de l'image, est installé apache, java, php et graphviz. Les fichiers présent dans le dossier html sont transferé dans le repertoire ``/var/www/html``. Le docker se connecte sur le port 80 et execute le service apache en arriere plan au demarrage du conteneur.
 
-Le fichier ``index.html`` sera afficher lorsque vous vous rendez sur votre ip local au port choisi. Grâce au fichier ``script.js`` vous pourrez ajouté des lignes au tableux présent dans le fichier html et récuperer les entrées pour les convertir en fichier csv avec ``enregistrer.php`` et executer le fichier ``MPM.java`` qui va permettre de trouver dates "au plus tôt" et "au plus tard".
+Le fichier ``index.html`` sera afficher lorsque vous vous rendez sur votre ip local au port choisi. Grâce au fichier ``script.js`` vous pourrez ajouté des lignes au tableux présent dans le fichier html et récuperer les entrées pour les convertir en fichier csv avec ``enregistrer.php`` et executer le fichier ``MPM.java`` qui va permettre de trouver dates "au plus tôt" et "au plus tard". Le fichier java va ensuite créer un fichier ``.dot`` qui va etre executer en language bash par le php pour crée un png. Le fichier javascript va ensuite attendre 5 secondes le temps que l'image se genere puis la faire télécharger par l'utilisateur.
+
+## Utilisation
+
+Maintenant que vous savez ce qu'est un MPM, vous pouvez facilement généré votre schéma. Il existe cependant des conditions pour ne pas que le programme plante. Pour la colonne `duree`
 
