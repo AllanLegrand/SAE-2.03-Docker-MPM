@@ -125,5 +125,5 @@ Il est donc possible de cumuler des retards, s'inscrivant dans leur marge certai
 
 On remarque que les marges des tâches composant le chemin critique sont nécessairement nulles, puisqu'il s'agit de tâches pour lesquels, par définition, aucun retard n'est possible sans remettre en cause la durée optimale prévue pour le projet.	
 
-
+## Réalisation
 
