@@ -56,8 +56,8 @@ Elle s'obtient très simplement en ajoutant à la date au plus tôt de la tâche
 Date au plus tôt tâche T = Date au plus tôt tâche S + Durée tâche S	
 
 Lorsque plusieurs arcs arrivent à un même sommet (c'est-à-dire que plusieurs tâches sont immédiatement antérieures à la tâche considérée), il convient, d'effectuer ce calcul pour toutes les tâches précédant la tâche en question et de retenir comme "date au plus tôt" de cette dernière le maximum des valeurs ainsi trouvée (en effet, cette tâche ne pourra vraiment débuter que lorsque toutes les tâches qui lui sont immédiatement antérieures auront été terminées). La formule précédente devient donc :	
-Date au plus tôt tâche T = Max. (Date plus tôt tâches S + Durée tâches S)	
-Dans cette formule, "S" représente l'ensemble des tâches immédiatement antérieures à "T"	
+- Date au plus tôt tâche T = Max. (Date plus tôt tâches S + Durée tâches S)	
+- Dans cette formule, "S" représente l'ensemble des tâches immédiatement antérieures à "T"	
 
 La détermination des dates au plus tôt des différentes sommets se fait donc par calculs successifs, à partir du sommet "Début" (dont, par convention, la date au plus tôt est fixée à 0).	
 La durée minimale du projet correspond donc à la date au plus tôt du sommet "Fin".	
