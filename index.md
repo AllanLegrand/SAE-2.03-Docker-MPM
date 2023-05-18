@@ -47,7 +47,7 @@ Le graphe se lit de gauche à droite (du sommet "DÉBUT" à celui de "FIN").
 	Chaque sommet symbolise une tâche.	
 	Les arcs entre les sommets traduisent uniquement les relations d'antériorité des tâches. D'un même sommet peuvent donc partir plusieurs flèches, lorsque la tâche correspondante est immédiatement antérieure à plusieurs tâches indépendantes.	
 
-###  Détermination des dtaes "au plus tôt" et "au plus tard" dans un réseau MPM
+###  Détermination des dates "au plus tôt" et "au plus tard" dans un réseau MPM
 
 Chaque sommet est identifié par une cartouche où sont précisés : le "nom de la tâche", la "durée de cette tâche", les dates de "début au plus tôt" et de "début au plus tard" de cette tâche.	
 
@@ -129,5 +129,5 @@ On remarque que les marges des tâches composant le chemin critique sont nécess
 
 Lors de la création de l'image, est installé apache, java, php et graphviz. Les fichiers présent dans le dossier html sont transferé dans le repertoire ``/var/www/html``. Le docker se connecte sur le port 80 et execute le service apache en arriere plan au demarrage du conteneur.
 
-Le fichier ``index.html`` sera afficher lorsque vous vous rendez sur votre ip local au port choisi. Grâce au fichier ``script.js`` vous pourrez ajouté des lignes au tableux présent dans le fichier html et récuperer les entrées pour les convertir en fichier csv avec ``enregistrer.php`` et executer le fichier java qui va permettre de trouver 
+Le fichier ``index.html`` sera afficher lorsque vous vous rendez sur votre ip local au port choisi. Grâce au fichier ``script.js`` vous pourrez ajouté des lignes au tableux présent dans le fichier html et récuperer les entrées pour les convertir en fichier csv avec ``enregistrer.php`` et executer le fichier ``MPM.java`` qui va permettre de trouver dates "au plus tôt" et "au plus tard".
 
