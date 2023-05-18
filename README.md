@@ -25,7 +25,7 @@ Restez dans le dossier SAE-2.03-Docker-MPM et exécuter la commande suivante :
 Cela peut prendre entre 2 à 5 minutes à s'installer. 
 Une fois terminer, tappez la commande suivante :
 
-``docker run --name <nom_image> -d -p <port-hôte>:80 <nom_image>``
+``docker run --name <nom_du_conteneur> -d -p <port-hôte>:80 <nom_image>``
 
 Une fois lancé, démarrer un navigateur de votre choix et tapper dans la barre la ligne suivante :
 
