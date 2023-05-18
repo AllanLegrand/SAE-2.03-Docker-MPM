@@ -44,6 +44,3 @@ Une fois les planning et autre crées, vous pouvez supprimer l'image (afin de li
 et
 
 ``docker rm <nom_image>``
-```shell
-docker build -t serveurMPM .
-```
