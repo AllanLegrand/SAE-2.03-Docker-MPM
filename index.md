@@ -24,6 +24,8 @@ Le recours à la méthode des potentiels Métra suppose qu'aient été identifi�
 | D	| 5	| A,B	|
 | E | 6	| C,D |	
 
+### Conventions de base d'un graphe MPM	
+
 La méthode des potentiels Métra permet de représenter l'ensemble de ces tâches sur un graphe orienté, à partir duquel il sera possible d'identifier leurs dates au plus et au plus tard et de calculer leurs marges.	
 	Un graphe orienté est un réseau composé d'une entrée et d'une sortie, ainsi que de points (appelés "sommets") reliés entre eux par des flèches (appelées "arcs").	
 
