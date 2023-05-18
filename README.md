@@ -6,28 +6,28 @@
 - Docker
 
 ### Récupérer les fichier
-Pour que notre application fonctionne, il est important de récupérer les fichiers nécessaire à son fonctionnement.
+Afin de faire fonctionner notre application, il vous faut récupérer les fichiers nécessaire à son fonctionnement.
 Mettez vous dans un répértoire de votre choix, puis, tappez la commande suivante :
 
 ``git clone git@github.com:AllanLegrand/SAE-2.03-Docker-MPM.git``
 
-Si vous regardez votre répértoire, vous verrez qu'un dossier **SAE-2.03-Docker-MPM** s'est crée, déplacer vous dedans avec la commande
+Normalement, dans votre répértoire, un dossier **SAE-2.03-Docker-MPM** s'est crée, déplacer vous dedans avec la commande
 
 ``cd docker-sae203``
 
-Dedans, vous trouverez le fichier README.md, le fichier DockerFile, et un dossier app.
+Dedans, vous trouverez le fichier README.md, le fichier DockerFile, et un dossier html.
 
 ### Créer et lancer l'image 
-Toujours dans le dossier SAE-2.03-Docker-MPM, exécuter la commande suivante (en remplacant <nom_image> par le nom que vous voulez) :
+Restez dans le dossier SAE-2.03-Docker-MPM et exécuter la commande suivante :
 
 ``docker build -t <nom_image> .``
 
-Cela vous prendra surement un petit moment (le temps que tout s'installe). 
+Cela peut prendre entre 2 à 5 minutes à s'installer. 
 Une fois terminer, tappez la commande suivante :
 
 ``docker run --name <nom_image> -d -p <port-hôte>:80 <nom_image>``
 
-*Note : Il se peut que le port soit déja occupé par votre pc pour autre chose. On vous insite à utiliser le port 8080 pour éviter tous problèmes*
+*Note : Bien évidement, <nom_image> est à remplcaer par le nom que vous voulez*
 
 Une fois lancé, démarrer un navigateur de votre choix et tapper dans la barre la ligne suivante :
 
@@ -35,12 +35,6 @@ Une fois lancé, démarrer un navigateur de votre choix et tapper dans la barre 
 
 http://localhost/
 
-*Info : Il est possible de changer les datas afin de générer des groupes propres à vos demandes. N'hésitez pas à regarder notre site pour plus d'informations sur comment faire.*
-
-Une fois les planning et autre crées, vous pouvez supprimer l'image (afin de libérer votre port) avec la commande :
+Une fois le graphe MPM généré, vous pouvez arrêter l'image afin de libérer votre port avec la commande :
 
 ``docker stop <nom_image>``
-
-et
-
-``docker rm <nom_image>``
