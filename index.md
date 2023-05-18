@@ -129,3 +129,5 @@ On remarque que les marges des tâches composant le chemin critique sont nécess
 
 Lors de la création de l'image, est installé apache, java, php et graphviz. Les fichiers présent dans le dossier html sont transferé dans le repertoire ``/var/www/html``. Le docker se connecte sur le port 80 et execute le service apache en arriere plan au demarrage du conteneur.
 
+Le fichier ``index.html`` sera afficher lorsque vous vous rendez sur votre ip local au port choisi. Grâce au fichier ``script.js`` vous pourrez ajouté des lignes au tableux présent dans le fichier html et récuperer les entrées pour les convertir en fichier csv avec php et executer le fichier java qui va permettre de trouver 
+
