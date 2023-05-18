@@ -18,7 +18,7 @@ Si vous regardez votre répértoire, vous verrez qu'un dossier **SAE-2.03-Docker
 Dedans, vous trouverez le fichier README.md, le fichier DockerFile, et un dossier app.
 
 ### Créer et lancer l'image 
-Toujours dans le dossier docker-sae203, exécuter la commande suivante (en remplacant <nom_image> par le nom que vous voulez) :
+Toujours dans le dossier SAE-2.03-Docker-MPM, exécuter la commande suivante (en remplacant <nom_image> par le nom que vous voulez) :
 
 ``docker build -t <nom_image> .``
 
