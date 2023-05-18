@@ -127,3 +127,5 @@ On remarque que les marges des tâches composant le chemin critique sont nécess
 
 ## Réalisation
 
+Lors de la création de l'image, est installé apache, java, php et graphviz. Les fichiers présent dans le dossier html sont transferé dans le repertoire ``/var/www/html``. Le docker se connecte sur le port 80 et execute le service apache en arriere plan au demarrage du conteneur.
+
