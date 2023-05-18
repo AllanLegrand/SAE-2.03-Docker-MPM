@@ -23,9 +23,9 @@ La méthode des potentiels Métra permet de représenter l'ensemble de ces tâch
 	Un graphe orienté est un réseau composé d'une entrée et d'une sortie, ainsi que de points (appelés "sommets") reliés entre eux par des flèches (appelées "arcs").	
 
 Les principales conventions d'un réseau MPM sont les suivantes :	
-	- chaque tâche est représentée par un sommet	
-	- les contraintes de succession sont symbolisées par les arcs	
-	- chaque tâche est renseignée sur sa durée ainsi que sur la date à laquelle elle peut commencer au plus tôt ("date au plus tôt") et au plus tard ("date au plus tard") pour respecter le délai optimal de réalisation du projet.	
-	- le graphe commence et termine sur 2 sommets, respectivement appelés "Début" et "Fin" symbolisant les début et fin des opérations (mais ne correspondant pas une tâche).	
+- chaque tâche est représentée par un sommet	
+- les contraintes de succession sont symbolisées par les arcs	
+- chaque tâche est renseignée sur sa durée ainsi que sur la date à laquelle elle peut commencer au plus tôt ("date au plus tôt") et au plus tard ("date au plus tard") pour respecter le délai optimal de réalisation du projet.	
+- le graphe commence et termine sur 2 sommets, respectivement appelés "Début" et "Fin" symbolisant les début et fin des opérations (mais ne correspondant pas une tâche).	
 
 docker build -t serveurMPM .
