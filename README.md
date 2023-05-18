@@ -9,7 +9,7 @@
 Pour que notre application fonctionne, il est important de récupérer les fichiers nécessaire à son fonctionnement.
 Mettez vous dans un répértoire de votre choix, puis, tappez la commande suivante :
 
-``git clone git@github.com:AllanLegrand/docker-sae203.git``
+``git clone git@github.com:AllanLegrand/SAE-2.03-Docker-MPM.git``
 
 Si vous regardez votre répértoire, vous verrez qu'un dossier **docker-sea203** s'est crée, déplacer vous dedans avec la commande
 
