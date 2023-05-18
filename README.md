@@ -13,7 +13,7 @@ Mettez vous dans un répértoire de votre choix, puis, tappez la commande suivan
 
 Normalement, dans votre répértoire, un dossier **SAE-2.03-Docker-MPM** s'est crée, déplacer vous dedans avec la commande
 
-``cd docker-sae203``
+``cd SAE-2.03-Docker-MPM``
 
 Dedans, vous trouverez le fichier README.md, le fichier DockerFile, et un dossier html.
 
