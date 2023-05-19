@@ -4,6 +4,7 @@
 
 - GIT
 - Docker
+- + d'1 Go de stockage
 
 ### Récupérer les fichier
 Afin de faire fonctionner notre application, il vous faut récupérer les fichiers nécessaire à son fonctionnement.
