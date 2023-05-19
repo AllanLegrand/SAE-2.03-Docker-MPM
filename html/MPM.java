@@ -74,7 +74,7 @@ public class MPM
 
             for (Sommet s : this.lstSommet)
                 for (Sommet suivant : s.getLstSuivant()) 
-                    pw.println("\"" + s + "\" -> \"" + suivant + "\"");
+                    pw.println("\"" + s + "\" -> \"" + suivant + "\"[ label=\""+s.getDuree()+"\", fontsize=8 ]");
 
             pw.println("}");
 
