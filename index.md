@@ -18,11 +18,17 @@ Le recours à la méthode des potentiels Métra suppose qu'aient été identifi�
 
 | Tâches | Durée | Antériorité |
 |--------------|:-----:|-----------:|
-| A	| 2	| -	|
-| B	| 4	| - |
-| C	| 4	| A	|
-| D	| 5	| A,B	|
-| E | 6	| C,D |	
+| A	| 5	| -	|
+| B	| 9	| - |
+| C	| 9	| A	|
+| D	| 8	| A	|
+| E | 3	| B |	
+| F | 8 | B |
+| G | 3 | D,E |
+| H | 2 | D,E |
+| I | 5 | C,G |
+| J | 3 | G |
+| K | 4 | H,F,G |
 
 ### Conventions de base d'un graphe MPM	
 
