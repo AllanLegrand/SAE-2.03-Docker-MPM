@@ -70,11 +70,20 @@ public class MPM
             PrintWriter pw = new PrintWriter(new OutputStreamWriter(new FileOutputStream("entree.dot"), "UTF8"));
 
             pw.println("digraph mygraph{");
-            pw.println("\tnode [shape=plaintext]");
+            pw.println("rankdir=\"LR\";");
+            pw.println("\tnode [shape=record];");
+            
+            pw.println("debut[label=\"debut|{0|0}\"];");
 
             for (Sommet s : this.lstSommet)
+                pw.println(s+"[label=\""+s+"|{"+s.getDateTot()+"|"+s.getDateTard()+"}\"];");
+                
+            for (Sommet s : this.lstSommet) 
+                if(s.getLstAntecedant().size() == 0)
+                    pw.println("debut -> " + s + "[ label=\"0\", fontsize=8 ];\n");
+            for (Sommet s : this.lstSommet)   
                 for (Sommet suivant : s.getLstSuivant()) 
-                    pw.println("\"" + s + "\" -> \"" + suivant + "\"[ label=\""+s.getDuree()+"\", fontsize=8 ]");
+                    pw.println(s + " -> " + suivant + "[ label=\""+s.getDuree()+"\", fontsize=8 ];\n");
 
             pw.println("}");
 

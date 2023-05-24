@@ -71,6 +71,6 @@ public class Sommet
 
     public String toString() 
     {
-        return this.nom + " : " + this.dateTot + " - " + this.dateTard;
+        return this.nom;
     }
 }
