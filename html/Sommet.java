@@ -36,7 +36,6 @@ public class Sommet
 
     public ArrayList<Sommet> getLstAntecedant() 
     {
-        this.lstAntecedant.remove(this);
         return this.lstAntecedant;
     }
 

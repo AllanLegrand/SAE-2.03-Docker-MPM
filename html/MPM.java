@@ -95,7 +95,11 @@ public class MPM
 
     private void genererMPM() 
     {
-        this.lstSommet.add(new Sommet("fin", 0, this.lstSommet));
+        ArrayList<Sommet> lstSansSuiv =  new ArrayList<Sommet>();
+        for(Sommet s : this.lstSommet)
+            if(s.getLstSuivant().size() == 0)
+                lstSansSuiv.add(s);
+        this.lstSommet.add(new Sommet("fin", 0, lstSansSuiv));
 
         // Generation de la liste des niveaux
         this.lstNiveaux = new ArrayList<ArrayList<Sommet>>();
