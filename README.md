@@ -21,24 +21,22 @@ Dedans, vous trouverez le fichier README.md, le fichier DockerFile, et un dossie
 ### Créer et lancer l'image 
 Restez dans le dossier SAE-2.03-Docker-MPM et exécuter la commande suivante :
 
-``docker build -t <nom_image> .``
+``docker build -t mpm .``
 
 Cela peut prendre entre 2 à 5 minutes à s'installer. 
 Une fois terminer, tappez la commande suivante :
 
-``docker run --name <nom_du_conteneur> -d -p <port-hôte>:80 <nom_image>``
+``docker run --name conteneur_mpm -d -p 8080:80 mpm``
 
 Une fois lancé, démarrer un navigateur de votre choix et tapper dans la barre la ligne suivante :
 
-``localhost:<port_hôte>``
+``localhost:8080``
 
-http://localhost/
+http://localhost:8080
 
 Une fois le graphe MPM généré, vous pouvez arrêter l'image afin de libérer votre port avec la commande :
 
-``docker stop <nom_image>``
-
-*Note : Bien évidement, <nom_image>, <nom_du_conteneur> et <port-hôte> sont à remplacer par le nom / port que vous voulez.*
+``docker stop mpm``
 
 Pour plus d'information sur l'utilisation, c'est ici : 
 https://allanlegrand.github.io/SAE-2.03-Docker-MPM/
