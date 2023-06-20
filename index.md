@@ -144,3 +144,6 @@ Maintenant que vous savez ce qu'est un MPM, vous pouvez facilement généré vot
 
 Vous pouvez ajouter des lignes et donc des sommets en appuyant sur le bouton correspondant, et quand vous avez finis votre tableau il suffit de cliquer sur le bouton Télécharger le schéma et attendre 5 secondes pour avoir votre schéma. Veillez a remplir chacune des lignes créer.
 
+![Capture\ d’écran\ du\ 2023-06-20\ 11-25-25.png](./images/Capture\ d’écran\ du\ 2023-06-20\ 11-25-25.png "Site")
+
+
