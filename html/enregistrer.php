@@ -30,6 +30,4 @@ else
 {
   echo "Erreur lors de la compilation du fichier Java.$compileOutput $compileStatus ";
 }
-
-exec("dot -Tpng entree.dot > MPM.png");
 ?>
