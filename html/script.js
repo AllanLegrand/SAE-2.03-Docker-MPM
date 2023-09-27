@@ -47,8 +47,8 @@ function telecharger()
   setTimeout(function() 
   {
     var lien = document.createElement('a');
-    lien.href = 'MPM.png';
-    lien.download = 'MPM.png'; 
+    lien.href = 'MPM.svg';
+    lien.download = 'MPM.svg'; 
     
     lien.style.display = 'none';
     document.body.appendChild(lien);
